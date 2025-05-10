@@ -170,3 +170,8 @@ main section p {
     background-color: var(--colour_four);
     color: black;
 }
+
+.full {
+    grid-column: 1 / -1;
+}
+
