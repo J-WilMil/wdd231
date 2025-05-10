@@ -1,0 +1,62 @@
+@media screen and (min-width: 841px) {
+    body {
+        max-width: 1200px;
+        font-size: 1.1rem;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    .card, .web, .courses-container {
+        grid-column: span 1;
+    }
+
+    .web {
+        grid-column: span 3;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        gap: 30px;
+        padding: 10px 20px;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        text-align: left;
+    }
+
+    header img {
+        height: 120px;
+        width: 120px;
+    }
+
+    header span {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    #menu {
+        display: none; 
+    }
+
+    .navigation {
+        display: block !important;
+    }
+
+    .button-container button {
+        font-size: 1.3rem;
+        padding: 20px;
+    }
+
+    .course {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+}
