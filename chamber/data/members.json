@@ -1,0 +1,67 @@
+{
+  "members": [
+    {
+      "name": "Acme Corp",
+      "tagline": "Innovation at its peak",
+      "email": "contact@acmecorp.com",
+      "phone": "800-123-4567",
+      "url": "https://www.acmecorp.com",
+      "image": "acme.webp",
+      "level": 3
+    },
+    {
+      "name": "Beta Solutions",
+      "tagline": "Smart business tools",
+      "email": "info@betasolutions.com",
+      "phone": "800-234-5678",
+      "url": "https://www.betasolutions.com",
+      "image": "beta.webp",
+      "level": 2
+    },
+    {
+      "name": "Creative Minds",
+      "tagline": "Designs that inspire",
+      "email": "hello@creativeminds.com",
+      "phone": "800-345-6789",
+      "url": "https://www.creativeminds.com",
+      "image": "creative.webp",
+      "level": 1
+    },
+    {
+      "name": "Delta Group",
+      "tagline": "Consulting experts",
+      "email": "team@deltagroup.com",
+      "phone": "800-456-7890",
+      "url": "https://www.deltagroup.com",
+      "image": "delta.webp",
+      "level": 3
+    },
+    {
+      "name": "Echo Electronics",
+      "tagline": "Tech for tomorrow",
+      "email": "sales@echoelectronics.com",
+      "phone": "800-567-8901",
+      "url": "https://www.echoelectronics.com",
+      "image": "echo.webp",
+      "level": 2
+    },
+    {
+      "name": "Fresh Start",
+      "tagline": "Your new beginning",
+      "email": "support@freshstart.com",
+      "phone": "800-678-9012",
+      "url": "https://www.freshstart.com",
+      "image": "fresh.webp",
+      "level": 1
+    },
+    {
+      "name": "Global Ventures",
+      "tagline": "Expanding possibilities",
+      "email": "info@globalventures.com",
+      "phone": "800-789-0123",
+      "url": "https://www.globalventures.com",
+      "image": "global.webp",
+      "level": 3
+    }
+  ]
+}

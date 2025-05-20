@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f3e5f5;
+  color: #1a1a1a;
+}
+
+header {
+  background-color: #6a1b9a;
+  color: #ffffff;
+  padding: 1rem;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#menu {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: none;
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+#menu::before {
+  content: "🍔";
+}
+
+#menu.show::before {
+  content: "❌";
+}
+
+.navigation ul {
+  display: none;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
+  background-color: #6a1b9a;
+}
+
+.navigation.open ul {
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+  background-color: #6a1b9a;
+  color: #ffffff;
+}
+
+#view-toggle {
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+#view-toggle button {
+  padding: 0.5rem 1rem;
+  background-color: #6a1b9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#member-cards.grid-view {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+#member-cards.list-view {
+  display: block;
+}
+
+.business-card {
+  background-color: #ffffff;
+  border: 1px solid #d1c4e9;
+  box-shadow: 0 0 10px rgba(106, 27, 154, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 0 0 90%;
+  margin-bottom: 1rem;
+}
+
+.list-view .business-card {
+  flex: 1 1 100%;
+}
+
+/* Footer */
+footer {
+  background-color: #4a148c;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}

@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+  .navigation ul {
+    display: flex !important;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: transparent;
+    margin: 0;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .business-card {
+    flex: 0 0 30%;
+  }
+
+  .footer-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+}

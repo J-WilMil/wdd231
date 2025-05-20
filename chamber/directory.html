@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Business Directory | Timbuktu Chamber of Commerce</title>
+
+  <meta name="description" content="Directory of member businesses in the Timbuktu Chamber of Commerce.">
+  <meta name="author" content="Your Name">
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+  <meta property="og:title" content="Timbuktu Chamber Directory">
+  <meta property="og:description" content="Find trusted businesses in the Timbuktu area.">
+  <meta property="og:image" content="images/og-image.jpg">
+  <meta property="og:url" content="https://your-chamber-site.com/directory.html">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles-large.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo"><img src="images/logo.webp" alt="Chamber logo" /></div>
+      <button id="menu" aria-label="Toggle menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Business Directory</h2>
+
+    <div id="view-toggle">
+      <button id="gridView">Grid View</button>
+      <button id="listView">List View</button>
+    </div>
+
+    <section id="member-cards" class="grid-view"></section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p>Timbuktu Chamber of Commerce</p>
+      <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/directory.js"></script>
+</body>
+</html>
