@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>WDD 231 – Chamber of Commerce - Jacob Milburn</title>
+  
+  <meta name="description" content="Welcome to the Timbuktu Chamber of Commerce home page.">
+  <meta name="author" content="Jacob Milburn" />
+  <link rel="icon" href="images/favicon.ico" />
+
+  <meta property="og:title" content="Timbuktu Chamber of Commerce">
+  <meta property="og:description" content="Connecting businesses in Timbuktu.">
+  <meta property="og:image" content="images/logo.webp">
+  <meta property="og:url" content="https://chambers/index.html">
+
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles-large.css" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo"><img src="images/logo.webp" alt="Chamber logo" /></div>
+      <h1>Chambers</h1>
+      <button id="menu" aria-label="Toggle menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="images/hero.webp" alt="Welcome to the Chamber" />
+      <div class="cta">
+        <h2>Join the Chamber of Commerce</h2>
+        <a href="join.html" class="cta-button">Become a Member</a>
+      </div>
+    </section>
+
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li><strong>Business Mixer:</strong> May 25 at Downtown Hall</li>
+        <li><strong>Local Market:</strong> May 30 at Central Park</li>
+        <li><strong>Tech Talk:</strong> June 5 - Online Webinar</li>
+      </ul>
+    </section>
+
+    <section class="weather">
+      <h2>Weather Forecast</h2>
+      <div id="weather">
+        <p>Loading weather...</p>
+      </div>
+    </section>
+
+    <section class="spotlights">
+      <h2>Member Spotlights</h2>
+      <div id="spotlights-container" class="grid-view"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p>Timbuktu Chamber of Commerce</p>
+      <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/home.js"></script>
+</body>
+</html>
