@@ -4,7 +4,8 @@ const weatherContainer = document.getElementById("weather");
 async function fetchWeather() {
   const apiKey = "e6bcc7da30ae0e3188e4811eb466768f"; 
   const city = "Manila";
-  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`;
+  const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=metric&appid=${apiKey}`;
+
 
   try {
     const response = await fetch(url);
