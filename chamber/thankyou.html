@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thank You</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles-large.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo"><img src="images/logo.webp" alt="Chamber logo" /></div>
+      <h1>Chambers</h1>
+      <button id="menu" aria-label="Toggle menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Thank You for Joining!</h1>
+    <p><strong>First Name:</strong> <span id="fn"></span></p>
+    <p><strong>Last Name:</strong> <span id="ln"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Phone:</strong> <span id="phone"></span></p>
+    <p><strong>Organization:</strong> <span id="org"></span></p>
+    <p><strong>Timestamp:</strong> <span id="timestamp"></span></p>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p>Timbuktu Chamber of Commerce</p>
+      <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script>
+    const params = new URLSearchParams(location.search);
+    document.getElementById("fn").textContent = params.get("firstname");
+    document.getElementById("ln").textContent = params.get("lastname");
+    document.getElementById("email").textContent = params.get("email");
+    document.getElementById("phone").textContent = params.get("phone");
+    document.getElementById("org").textContent = params.get("organization");
+    document.getElementById("timestamp").textContent = params.get("timestamp");
+  </script>
+</body>
+</html>

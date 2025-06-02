@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join the Chamber</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/styles-large.css" />
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo"><img src="images/logo.webp" alt="Chamber logo" /></div>
+      <h1>Chambers</h1>
+      <button id="menu" aria-label="Toggle menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="join-main">
+    <h1>Become a Member</h1>
+
+    <form method="get" action="thankyou.html">
+      <label>First Name:
+        <input type="text" name="firstname" required title="First Name" autocomplete="given-name">
+      </label>
+      <label>Last Name:
+        <input type="text" name="lastname" required title="Last Name" autocomplete="family-name">
+      </label>
+      <label>Title:
+        <input type="text" name="title" title="Organizational Title" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+      </label>
+      <label>Email:
+        <input type="email" name="email" required title="Email Address" autocomplete="email" placeholder="you@example.com">
+      </label>
+      <label>Mobile Phone:
+        <input type="tel" name="phone" required title="Mobile Phone" autocomplete="tel">
+      </label>
+      <label>Organization:
+        <input type="text" name="organization" required title="Business Name" autocomplete="organization">
+      </label>
+      <label>Membership Level:
+        <select name="membership" title="Select Membership Level">
+          <option value="np">NP Membership (Free)</option>
+          <option value="bronze">Bronze Membership</option>
+          <option value="silver">Silver Membership</option>
+          <option value="gold">Gold Membership</option>
+        </select>
+      </label>
+      <label>Business Description:
+        <textarea name="description" title="Business Description"></textarea>
+      </label>
+      <input type="hidden" name="timestamp" id="timestamp">
+      <input type="submit" value="Submit Application">
+    </form>
+
+    <div class="membership-cards">
+      <div class="card" id="np-card"><h3>NP Membership</h3><a href="#" data-modal="np-modal">Learn More</a></div>
+      <div class="card" id="bronze-card"><h3>Bronze Membership</h3><a href="#" data-modal="bronze-modal">Learn More</a></div>
+      <div class="card" id="silver-card"><h3>Silver Membership</h3><a href="#" data-modal="silver-modal">Learn More</a></div>
+      <div class="card" id="gold-card"><h3>Gold Membership</h3><a href="#" data-modal="gold-modal">Learn More</a></div>
+    </div>
+
+    <div class="modal" id="np-modal"><div class="modal-content"><p>No cost. Access to newsletters and public events.</p><button class="close">Close</button></div></div>
+    <div class="modal" id="bronze-modal"><div class="modal-content"><p>Includes event discounts and business directory listing.</p><button class="close">Close</button></div></div>
+    <div class="modal" id="silver-modal"><div class="modal-content"><p>All Bronze benefits + spotlight ads + quarterly trainings.</p><button class="close">Close</button></div></div>
+    <div class="modal" id="gold-modal"><div class="modal-content"><p>All Silver benefits + premium homepage placement + free event booth.</p><button class="close">Close</button></div></div>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p>Timbuktu Chamber of Commerce</p>
+      <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/join.js"></script>
+</body>
+</html>

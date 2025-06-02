@@ -21,3 +21,15 @@
     padding: 1rem;
   }
 }
+
+  form, .membership-cards {
+    flex: 1;
+  }
+
+  .membership-cards {
+    flex-direction: column;
+  }
+
+  .modal-content {
+    max-width: 600px;
+  }
