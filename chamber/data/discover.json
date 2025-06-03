@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Timbuktu Ancient Library",
+    "image": "images/library.webp",
+    "address": "123 Wisdom Way, Timbuktu",
+    "description": "This centuries-old library houses thousands of rare manuscripts that trace back to the golden age of West African scholarship."
+  },
+  {
+    "title": "Sahara Gate Park",
+    "image": "images/park.webp",
+    "address": "456 Oasis Lane, Timbuktu",
+    "description": "A green oasis with trails, gardens, and a panoramic view of the desert edge."
+  },
+  {
+    "title": "Market of 333 Saints",
+    "image": "images/market.webp",
+    "address": "789 Heritage Rd, Timbuktu",
+    "description": "This colorful open-air market honors the spiritual history of the region and offers traditional crafts, spices, and music."
+  },
+  {
+    "title": "Sunset Dunes Lookout",
+    "image": "images/dunes.webp",
+    "address": "Desert View Dr, Timbuktu",
+    "description": "Climb the observation deck to watch the dunes glow gold and orange during the spectacular Sahara sunsets."
+  },
+  {
+    "title": "Djinguereber Mosque",
+    "image": "images/mosque.webp",
+    "address": "1 Imam Square, Timbuktu",
+    "description": "A UNESCO World Heritage Site, this historic mosque is one of the oldest in West Africa and a symbol of Sahelian architecture."
+  },
+  {
+    "title": "Timbuktu Cultural Center",
+    "image": "images/culturalcenter.webp",
+    "address": "234 Unity Ave, Timbuktu",
+    "description": "This museum and cultural hub features exhibits on Malian history, art, and the oral traditions that shaped the region."
+  },
+  {
+    "title": "River Niger Boardwalk",
+    "image": "images/boardwalk.webp",
+    "address": "Riverside Blvd, Timbuktu",
+    "description": "A peaceful boardwalk along the Niger River, great for walking, birdwatching, and catching cool breezes at dusk."
+  },
+  {
+    "title": "Festival in the Desert Grounds",
+    "image": "images/festival.webp",
+    "address": "Festival Route, Timbuktu",
+    "description": "The iconic site of the music and cultural festival that once brought Tuareg musicians and global artists together under desert skies."
+  }
+]

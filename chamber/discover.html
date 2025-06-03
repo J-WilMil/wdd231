@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Discover Timbuktu - Chamber of Commerce</title>
+
+  <meta name="description" content="Explore the highlights of Timbuktu with our discover page.">
+  <meta name="author" content="Jacob Milburn">
+
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles-large.css">
+
+  <meta property="og:title" content="Timbuktu Chamber of Commerce">
+  <meta property="og:description" content="Connecting businesses in Timbuktu.">
+  <meta property="og:image" content="images/logo.webp">
+  <meta property="og:url" content="https://chambers/index.html">
+</head>
+<body>
+  <header>
+    <div class="logo-nav">
+      <div class="logo"><img src="images/logo.webp" alt="Chamber logo"></div>
+      <h1>Chambers</h1>
+      <button id="menu" aria-label="Toggle menu"></button>
+      <nav class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="directory.html">Directory</a></li>
+          <li><a href="join.html">Join</a></li>
+          <li><a href="discover.html" class="active">Discover</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h2>Discover Timbuktu</h2>
+    <div id="visitor-message"></div>
+    <section class="discover-grid" id="discoverCards"></section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <p>Timbuktu Chamber of Commerce</p>
+      <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
+    </div>
+  </footer>
+
+  <script src="scripts/discover.js"></script>
+
+  
+</body>
+</html>
