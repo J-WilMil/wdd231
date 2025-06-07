@@ -1,0 +1,43 @@
+body {
+    font-family: 'Garamond', serif;
+    background-color: #fff8e1;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5a3e2b;
+    color: #fceec9;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav a {
+    color: #fceec9;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 2rem;
+    max-width: 600px;
+    margin: auto;
+    background-color: #fffde7;
+    border-radius: 10px;
+}
+
+label, select {
+    display: block;
+    margin-top: 1rem;
+}
+
+button {
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    background-color: #5a3e2b;
+    color: #fceec9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
