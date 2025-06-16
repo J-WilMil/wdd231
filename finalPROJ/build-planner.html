@@ -1,54 +1,46 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
+    <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Build Planner - Jacob Milburn</title>
-
-    <meta name="description" content="WDD 131 – A simple build planner">
+    <title>WDD 231 – Fake Game Build Planner Build - Jacob Milburn</title>
+    
+    <meta name="description" content="WDD 131 – Fake Game Build Planner Build">
     <meta name="author" content="Jacob Milburn">
-    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
     <header>
         <h1>Build Planner</h1>
         <nav>
             <a href="index.html">Home</a>
-            <a href="build-planner.html" class="active">Build Planner</a>
+            <a href="build-planner.html">Build Planner</a>
+            <a href="community-planner.html">Community Builds</a>
         </nav>
     </header>
-
     <main>
-        <section>
-            <h2>Create Your Character</h2>
-            <label for="classSelect">Choose Class:</label>
-            <select id="classSelect">
-                <option>Warrior</option>
-                <option>Mage</option>
-                <option>Rogue</option>
-            </select>
-
-            <label for="weaponSelect">Choose Weapon:</label>
-            <select id="weaponSelect">
-                <option>Sword</option>
-                <option>Staff</option>
-                <option>Dagger</option>
-            </select>
-
-            <label for="armorSelect">Choose Armor:</label>
-            <select id="armorSelect">
-                <option>Plate</option>
-                <option>Robes</option>
-                <option>Leather</option>
-            </select>
-
-            <button>Save Build</button>
+        <section id="build-planner">
+            <h2>Create Your Character Build</h2>
+            <div class="planner">
+                <div class="gear-selection">
+                    <label for="classSelect">Class:</label>
+                    <select id="classSelect"></select>
+                    <label for="weaponSelect">Weapon:</label>
+                    <select id="weaponSelect"></select>
+                    <label for="armorSelect">Armour:</label>
+                    <select id="armorSelect"></select>
+                </div>
+                <div class="stat-display">
+                    <div id="classImageContainer">
+                        <img id="classImage" alt="Selected Class Image" loading="lazy" />
+                    </div>
+                    <div id="statDisplay"></div>
+                </div>
+            </div>
+            <button onclick="saveBuild()">Save Build</button>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2025 Jacob Milburn</p>
-    </footer>
+    <script src="scripts/build-planner.js"></script>
 </body>
 </html>

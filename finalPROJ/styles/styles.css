@@ -1,43 +1,100 @@
 body {
     font-family: 'Garamond', serif;
-    background-color: #fff8e1;
+    background-size: cover;
+    color: #3b2f2f;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: #5a3e2b;
-    color: #fceec9;
-    text-align: center;
+    background-color: rgba(51, 34, 17, 0.9);
     padding: 1rem;
+    text-align: center;
+    border-bottom: 3px solid #bfa76f;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    color: #e5d3a6;
+    font-size: 2.5rem;
 }
 
 nav a {
-    color: #fceec9;
     margin: 0 1rem;
+    color: #e5d3a6;
     text-decoration: none;
     font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-    max-width: 600px;
-    margin: auto;
-    background-color: #fffde7;
-    border-radius: 10px;
+nav a:hover {
+    color: #f8eac7;
+    text-shadow: 0 0 5px #fff;
 }
 
-label, select {
-    display: block;
-    margin-top: 1rem;
+main {
+    padding: 2rem;
+    background-color: rgba(255, 255, 240, 0.8);
+    margin: 2rem auto;
+    max-width: 900px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.planner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gear-selection,
+.stat-display {
+    flex: 1;
+    min-width: 300px;
+    margin: 1rem;
+    background-color: rgba(245, 235, 200, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    border: 2px solid #c2b280;
+}
+
+.stat-display {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.build-card {
+    background-color: rgba(245, 235, 210, 0.9);
+    border: 2px solid #bfa76f;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
 }
 
 button {
-    margin-top: 2rem;
     padding: 0.5rem 1rem;
+    margin-top: 1rem;
     background-color: #5a3e2b;
     color: #fceec9;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+
+button:hover {
+    background-color: #7a543a;
+}
+
+
+@media (max-width: 768px) {
+  .planner {
+    flex-direction: column;
+  }
+
+  .gear-selection, .stat-display {
+    margin: 0.5rem 0;
+  }
 }
