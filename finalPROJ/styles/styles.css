@@ -193,8 +193,8 @@ button:hover {
 }
 
 .site-footer {
-  background-color: rgba(51, 34, 17, 0.95); /* matches header */
-  color: #e5d3a6; /* parchment gold */
+  background-color: rgba(51, 34, 17, 0.95); 
+  color: #e5d3a6; 
   text-align: center;
   padding: 1.5rem 1rem;
   border-top: 3px solid #bfa76f;
