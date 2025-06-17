@@ -192,6 +192,23 @@ button:hover {
     box-shadow: 0 0 8px #00cc66;
 }
 
+.site-footer {
+  background-color: rgba(51, 34, 17, 0.95); /* matches header */
+  color: #e5d3a6; /* parchment gold */
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-top: 3px solid #bfa76f;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.4);
+  font-family: 'Garamond', serif;
+  margin-top: 4rem;
+}
+
+.site-footer .footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
 
 @media (max-width: 768px) {
   .planner {
