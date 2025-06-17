@@ -1,0 +1,23 @@
+{
+  "classes": {
+    "Warrior": { "STR": 10, "VIG": 8, "INT": 2, "DEX": 5, "END": 7 },
+    "Mage": { "STR": 2, "VIG": 5, "INT": 12, "DEX": 4, "END": 6 },
+    "Rogue": { "STR": 5, "VIG": 6, "INT": 4, "DEX": 10, "END": 5 }
+  },
+  "weapons": {
+    "Sword": { "STR": 3, "DEX": 1 },
+    "Axe": { "STR": 4, "END": 1 },
+    "Staff": { "INT": 5 },
+    "Bow": { "STR": 1, "DEX": 3 }
+  },
+  "armours": {
+    "Light": { "DEX": 2 },
+    "Medium": { "STR": 1, "END": 1 },
+    "Heavy": { "STR": 3, "END": 2 }
+  },
+  "classImages": {
+    "Warrior": "images/warrior.webp",
+    "Mage": "images/mage.webp",
+    "Rogue": "images/rogue.webp"
+  }
+}
