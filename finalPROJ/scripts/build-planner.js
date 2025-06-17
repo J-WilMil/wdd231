@@ -133,4 +133,39 @@ function setupItemListeners() {
   });
 }
 
+function saveBuild() {
+    const name = prompt("Enter a name for your build:");
+    if (!name) return;
+
+    const selectedClass = classSelect.value;
+    const selectedWeapon = weaponSelect.value;
+    const selectedArmour = armourSelect.value;
+
+    const baseStats = classes[selectedClass];
+    const weaponStats = weapons[selectedWeapon];
+    const armourStats = armours[selectedArmour];
+
+    const stats = { STR: 0, VIG: 0, INT: 0, DEX: 0, END: 0 };
+    Object.keys(stats).forEach(stat => {
+        stats[stat] += baseStats[stat] || 0;
+        stats[stat] += weaponStats[stat] || 0;
+        stats[stat] += armourStats[stat] || 0;
+    });
+
+    const newBuild = {
+        name,
+        class: selectedClass,
+        weapon: selectedWeapon,
+        armour: selectedArmour,
+        stats
+    };
+
+    const savedBuilds = JSON.parse(localStorage.getItem("communityBuilds")) || [];
+    savedBuilds.push(newBuild);
+    localStorage.setItem("communityBuilds", JSON.stringify(savedBuilds));
+
+    alert("Build saved successfully! Visit the Community Builds page to see it.");
+}
+
+
 document.addEventListener("DOMContentLoaded", fetchData);

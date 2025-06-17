@@ -41,8 +41,12 @@ function displayBuildCard(build) {
 
 function loadAllBuilds() {
     communityBuildsContainer.innerHTML = "";
+
     sampleBuilds.forEach(displayBuildCard);
+
     const saved = JSON.parse(localStorage.getItem("communityBuilds")) || [];
+    console.log("Loaded saved builds:", saved);
+
     if (saved.length === 0) {
         const message = document.createElement("p");
         message.textContent = "No saved builds yet. Create one in the Build Planner!";
