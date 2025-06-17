@@ -4,11 +4,16 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>WDD 231 – Fake Game Build Planner Build - Jacob Milburn</title>
-    
     <meta name="description" content="WDD 131 – Fake Game Build Planner Build">
     <meta name="author" content="Jacob Milburn">
+    <style>
+        .item.selected {
+            border: 2px solid #00cc66;
+            background-color: rgba(0, 204, 102, 0.1);
+            box-shadow: 0 0 8px #00cc66;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,13 +33,78 @@
                     <select id="classSelect"></select>
                     <label for="weaponSelect">Weapon:</label>
                     <select id="weaponSelect"></select>
-                    <label for="armorSelect">Armour:</label>
-                    <select id="armorSelect"></select>
+                    <label for="armourSelect">Armour:</label>
+                    <select id="armourSelect"></select>
+
+                   <div class="item-grid">
+                    <div class="item-section">
+                        <h2>Class</h2>
+                        <div class="item" data-type="class" data-name="Warrior" data-stats="STR: 4, VIG: 3, INT: -2">
+                            <img src="images/warrior.webp" alt="Warrior">
+                            <p>Warrior</p>
+                        </div>
+                        <div class="item" data-type="class" data-name="Mage" data-stats="INT: 5, VIG: 2, STR: -1">
+                            <img src="images/mage.webp" alt="Mage">
+                            <p>Mage</p>
+                        </div>
+                        <div class="item" data-type="class" data-name="Rogue" data-stats="DEX: 4, STR: 1">
+                            <img src="images/rogue.webp" alt="Rogue">
+                            <p>Rogue</p>
+                        </div>
+                    </div>
+
+                    <div class="item-section">
+                        <h2>Weapon</h2>
+                        <div class="item" data-type="weapon" data-name="Sword" data-stats="STR: 3, DEX: 2">
+                            <img src="images/sword.webp" alt="Sword">
+                            <p>Sword</p>
+                        </div>
+                        <div class="item" data-type="weapon" data-name="Axe" data-stats="STR: 4, END: 1">
+                            <img src="images/axe.webp" alt="Axe">
+                            <p>Axe</p>
+                        </div>
+                        <div class="item" data-type="weapon" data-name="Bow" data-stats="DEX: 3, STR: 1">
+                            <img src="images/bow.webp" alt="Bow">
+                            <p>Bow</p>
+                        </div>
+                        <div class="item" data-type="weapon" data-name="Staff" data-stats="INT: 5">
+                            <img src="images/staff.webp" alt="Staff">
+                            <p>Staff</p>
+                        </div>
+                    </div>
+
+                    <div class="item-section">
+                        <h2>Armour</h2>
+                        <div class="item" data-type="armour" data-name="Light" data-stats="DEX: 2">
+                            <img src="images/light.webp" alt="Light Armour">
+                            <p>Light Armour</p>
+                        </div>
+                        <div class="item" data-type="armour" data-name="Medium" data-stats="STR: 1, END: 1">
+                            <img src="images/medium.webp" alt="Medium Armour">
+                            <p>Medium Armour</p>
+                        </div>
+                        <div class="item" data-type="armour" data-name="Heavy" data-stats="STR: 3, END: 2">
+                            <img src="images/heavy.webp" alt="Heavy Armour">
+                            <p>Heavy Armour</p>
+                        </div>
+                    </div>
                 </div>
+
+
+                    <div id="modal" class="modal">
+                        <div class="modal-content">
+                            <span id="modal-close">&times;</span>
+                            <h2 id="modal-title"></h2>
+                            <p id="modal-body"></p>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="stat-display">
                     <div id="classImageContainer">
                         <img id="classImage" alt="Selected Class Image" loading="lazy" />
                     </div>
+
                     <div id="statDisplay"></div>
                 </div>
             </div>

@@ -5,21 +5,21 @@ const sampleBuilds = [
         name: "Blademaster Thorne",
         class: "Warrior",
         weapon: "Axe",
-        armor: "Heavy",
+        armour: "Heavy",
         stats: { STR: 17, VIG: 8, INT: 2, DEX: 5, END: 10 }
     },
     {
         name: "Whisperleaf",
         class: "Rogue",
         weapon: "Bow",
-        armor: "Light",
+        armour: "Light",
         stats: { STR: 5, VIG: 6, INT: 4, DEX: 15, END: 5 }
     },
     {
         name: "Eldrin the Wise",
         class: "Mage",
         weapon: "Staff",
-        armor: "Medium",
+        armour: "Medium",
         stats: { STR: 3, VIG: 5, INT: 17, DEX: 4, END: 7 }
     }
 ];
@@ -32,7 +32,7 @@ function displayBuildCard(build) {
         <h3>${build.name}</h3>
         <p><strong>Class:</strong> ${build.class}</p>
         <p><strong>Weapon:</strong> ${build.weapon}</p>
-        <p><strong>Armour:</strong> ${build.armor}</p>
+        <p><strong>Armour:</strong> ${build.armour}</p>
         <p><strong>Stats:</strong></p>
         <ul>${statList}</ul>
     `;
